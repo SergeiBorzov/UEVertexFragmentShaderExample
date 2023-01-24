@@ -1,0 +1,12 @@
+#include "/Engine/Public/Platform.ush"
+
+void MainVS(float4 InPosition : ATTRIBUTE0, out float4 OutPosition : SV_POSITION)
+{
+	OutPosition = InPosition;
+}
+
+float4 StartColor;
+void MainPS(out float4 OutColor : SV_Target0) 
+{
+	OutColor = StartColor;
+}
